@@ -1,0 +1,113 @@
+body {
+  /* 设置背景图片并去掉背景图片的重复插入属性 */
+  background: url(../images/bg-big.jpg) no-repeat;
+  width: 100%;
+  /* 设置高度才能显示背景图片 */
+  height: 1000px;
+  /* 文本居中 */
+  text-align: center;
+}
+
+a {
+  /* 取消链接的默认样式 */
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  /* 取消无序排列的样式 */
+  list-style-type: none;
+}
+header,
+footer {
+  /* 宽度适应浏览器 */
+  width: 100%;
+}
+header h3,
+footer h3 {
+  color: #333333;
+}
+nav {
+  background-color: #99ccff;
+  height: 40px;
+  width: 100%；
+}
+nav ul {
+  /* 设置导航区文字的行高 */
+  line-height: 40px;
+}
+nav ul li {
+  /* 内联元素，不换行 */
+  display: inline;
+  /* 为美观，设置元素的内边距 */
+  padding: 0 30px;
+}
+nav ul li a {
+  color: #fff;
+}
+
+nav ul li:hover {
+  /* 当鼠标指针悬浮在链接上时变色 */
+  background-color: #336699;
+}
+
+aside {
+  /* 侧边导航栏滑动效果 */
+  position: fixed;
+}
+aside ul {
+  /* 布局的关键，向左浮动 */
+  float: left;
+  background-color: #fff;
+  border: 3px solid #ffcc33;
+  /* 设置边栏导航区文字的行高 */
+  line-height: 80px;
+  /* 设置边栏导航区的右内边距 */
+  padding-right: 40px;
+}
+
+aside ul li a:hover {
+  /* 当鼠标指针悬浮在链接上时变色 */
+  background-color: #99ccff;
+}
+
+.container {
+  /* 与左边留出一定间隙，使元素不被边栏导航遮挡 */
+  margin: 10px 0 0  250px;
+  background-color: #fff;
+  height: 800px;
+  width: 800px;
+  /* 为美观，元素加边框 */
+  border:3px solid #ffcc33;
+}
+
+table {
+  width: 80%;
+  /* 表格上方与父元素或上一个表格留出间隙，位置居中 */
+  margin: 15px auto 0 auto;
+  border: 1px solid #99ccff;
+  /* 合并表格边框 */
+  border-collapse: collapse;
+}
+.question {
+  background-color: #99ccff;
+}
+
+.answer {
+  /* 为美观，设置上、下内边距 */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  /* 提交按钮的圆角边框 */
+  border-radius: 6px;
+  border: 1px solid #aed0ea;
+  /* 加粗提交文字 */
+  font-weight: bold;
+  /* 提交按钮的文字行高 */
+  line-height: 1.5em;
+  background-color: #003366;
+  color: #fff;
+  /* 提交按钮的内边距 */
+  padding: 0.3em 1em;
+}

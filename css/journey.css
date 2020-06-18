@@ -1,0 +1,95 @@
+body {
+  /* 设置背景图片并去掉背景图片的重复插入属性 */
+  background: url(../images/bg-big.jpg) no-repeat;
+  width: 100%;
+  /* 设置高度才能显示背景图片 */
+  height: 1000px;
+  /* 文本居中 */
+  text-align: center;
+}
+
+a {
+  /* 取消链接的默认样式 */
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  /* 取消无序排列的样式 */
+  list-style-type: none;
+}
+
+header,
+footer {
+   /* 宽度适应浏览器 */
+  width: 100%;
+}
+
+header h3,
+footer h3 {
+  color: #333333;
+}
+nav {
+  background-color: #99ccff;
+  height: 40px;
+}
+nav ul {
+  /* 设置导航区文字的行高 */
+  line-height: 40px;
+}
+nav ul li {
+  /* 内联元素，不换行 */
+  display: inline;
+  /* 为美观，设置元素的内边距 */
+  padding: 0 30px;
+}
+nav ul li a {
+  color: #fff;
+}
+
+nav ul li:hover {
+  /* 当鼠标指针悬浮在链接上时变色 */
+  background-color: #336699;
+}
+
+aside {
+  /* 侧边导航栏滑动效果 */
+  position: fixed;
+}
+aside ul {
+  /* 布局的关键，向左浮动 */
+  float: left;
+  background-color: #ccffff;
+  /* 设置边栏导航区文字的行高 */
+  line-height: 80px;
+  /* 设置边栏导航区的右内边距 */
+  padding-right: 40px;
+  background-color: #fff;
+  border: 3px solid #ffcc33;
+}
+
+aside ul li a:hover {
+  /* 当鼠标指针悬浮在链接上时变色 */
+  background-color: #99ccff;
+}
+
+.container {
+  width: 800px;
+  height: 780px;
+  background-color: #fff;
+  /* 为美观，元素加边框 */
+  border: 3px solid #ffcc33;
+  /* 上方及左边留出间隙，使元素不被边栏导航遮挡 */
+  margin: 15px 0 0 250px;
+}
+.container-1 {
+  width: 800px;
+  /* 宽度小于放置的照片的总宽度，内容溢出 */
+  height: 300px;
+}
+
+.inner {
+  /* 内容溢出时显示滚动条 */
+  overflow-x: scroll;
+  /* 使容器内元素横向排列 */
+  display: flex;
+}

@@ -1,0 +1,109 @@
+body {
+  /* 设置背景图片并去掉背景图片的重复插入属性 */
+  background: url(../images/bg.jpg) no-repeat;
+  width: 100%;
+  /* 设置高度才能显示背景图片 */
+  height: 800px;
+  /* 文本居中 */
+  text-align: center;
+}
+
+a {
+  /* 取消链接的默认样式 */
+  text-decoration: none;
+  color: #000;
+}
+ul {
+  /* 取消无序排列的样式 */
+  list-style-type: none;
+}
+
+header,
+footer {
+  /* 宽度适应浏览器 */
+  width: 100%;
+}
+
+header h3,
+footer h3 {
+  color: #333333;
+}
+
+nav {
+  background-color: #99ccff;
+  height: 40px;
+}
+nav ul {
+  /* 设置导航区文字的行高 */
+  line-height: 40px;
+}
+nav ul li {
+  /* 内联元素，不换行 */
+  display: inline;
+  /* 为美观，设置元素的内边距 */
+  padding: 0 30px;
+}
+nav ul li a {
+  color: #fff;
+}
+nav ul li:hover {
+  /* 当鼠标指针悬浮在链接上时变色 */
+  background-color: #336699;
+}
+
+.container {
+  width: 1200px;
+  height: 600px;
+  /* 控制块元素居中 */
+  margin: 0 auto;
+}
+
+aside {
+  /* 侧边导航栏滑动效果 */
+  position: fixed;
+  /* 与左边留出间隙 */
+  margin-left: 80px;
+}
+aside ul {
+  /* 布局的关键，向左浮动 */
+  float: left;
+  background-color: #fff;
+  border: 3px solid #ffcc33;
+  /* 设置边栏导航区文字的行高 */
+  line-height: 80px;
+  /* 设置边栏导航区的右内边距 */
+  padding-right: 40px;
+}
+
+aside ul li a:hover {
+  /* 当鼠标指针悬浮在链接上时变色 */
+  background-color: #99ccff;
+}
+
+.container-1 {
+  /* 布局的关键，向右浮动 */
+  float: right;
+  /* 上方和父元素container之间留有间隙 */
+  margin-top: 40px;
+  /* 右边和父元素container之间留有间隙 */
+  margin-right: 80px;
+  border: 3px solid #ffcc33;
+  background-color: #fff;
+}
+.face-img {
+  /* 图片上方与父元素留有间隙 */
+  margin-top: 10px;
+}
+
+.container-2 {
+   /* 布局的关键，向右浮动 */
+  float: right;
+  /* 和右边的container-1之间留有间隙 */
+  margin-right: 100px;
+  /* 上方和父元素container之间留有间隙 */
+  margin-top: 40px;
+  /* 设置文字的行高 */
+  line-height: 35px;
+  border: 3px solid #ffcc33;
+  background-color: #fff;
+}
